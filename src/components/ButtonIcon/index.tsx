@@ -11,11 +11,11 @@ import {
 import DiscordImg from '../../assets/discord.png';
 import { styles } from './styles';
 
-interface IProps extends RectButtonProps {
+interface Props extends RectButtonProps {
     title: string;
 }
 
-export function ButtonIcon({ title, ...props }: IProps) {
+export function ButtonIcon({ title, ...props }: Props) {
     return (
         <RectButton style={styles.container} {...props}>
             <View style={styles.iconWrapper}>
